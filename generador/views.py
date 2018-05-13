@@ -10,16 +10,16 @@ def inicio(request):
 
 
 def generadorLote1(request):
-    minLote, maxLote = 0.333333, 0.397766
+    maxLote = 0.003472
     r = round(random.random(), 6)
-    x = round(round(maxLote - minLote, 6) * r + minLote, 6)
+    x = round(round(maxLote, 6) * r, 6)
 
     form = VariableL1ModelForm(initial={'valor': x}, auto_id=False)
 
     context = {
         "elform": form,
         "title": "Lote 1 - 'Tiempo de Arribo'",
-        "minymax": "Minimo: 0.333333 - Maximo: 0.397766",
+        "minymax": "Minimo: 0.000000 - Maximo: 0.003472",
     }
 
     if request.POST:
@@ -37,7 +37,7 @@ def generadorLote1(request):
 
 
 def generadorLote2(request):
-    minLote, maxLote = 0.003519, 0.008310
+    minLote, maxLote = 0.003472, 0.008333
 
     r = round(random.random(), 6)
     x = round(round(maxLote - minLote, 6) * r + minLote, 6)
@@ -47,7 +47,7 @@ def generadorLote2(request):
     context = {
         "elform": form,
         "title": "Lote 2 - 'Tiempo de Atencion'",
-        "minymax": "Minimo: 0.003519 - Maximo: 0.008310",
+        "minymax": "Minimo: 0.003472 - Maximo: 0.008333",
     }
 
     if request.POST:
