@@ -8,8 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-  <link href="https://getbootstrap.com/docs/4.1/examples/sticky-footer-navbar/sticky-footer-navbar.css" rel="stylesheet">
-  <!-- estilo para el footer -->
+  
 
 </head>
 <body style="height:400px">
@@ -27,7 +26,7 @@
         <li>Las variables generadas se guardan en una base de datos SQLite 3</li>
         <br>
         <li>Se utilizo el lenguaje Python 3.5 y el Framework Web Django (ver 1.11)</li>
-        <li>El proyecto esta alojado en el hosting de <a href="https://www.pythonanywhere.com">"Python anywhere"</a>con una cuenta gratuita.</li>
+        <li>El proyecto esta alojado en el hosting de <a href="https://www.pythonanywhere.com">"Python Anywhere"</a>con una cuenta gratuita.</li>
         <li>De esta manera se evitan los instaladores (y la guia para la instalacion), instalacion de librerias externas y es independiente del SO que se utiliza</li>  
       </p>
       
@@ -35,11 +34,9 @@
 
   </div>
 
-  <footer class="footer">
-      <div class="container">
-        <span class="text-muted">Desarrollado por Grupo Nº 3 --> Acosta Cesar, Garcia Akiyama Jorge, Sack Dante René, Grinberg David</span>
-      </div>
-  </footer>
+
+{% include "footer.html" %}
+
 </body>
 </html>
 
