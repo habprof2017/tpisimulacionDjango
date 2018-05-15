@@ -34,13 +34,15 @@
          <div class="container-fluid">
      
         {% if object_list %} 
+         <p>Minimo: 0.000000 - Maximo: 0.003472</p>
+         
             <ul> 
-            {% for variable  in object_list %} 
-                <li> {{ variable.valor }} </li> 
-            {% endfor %} 
+              {% for variable  in object_list %} 
+                  <li> {{ variable.valor | floatformat:6 }} </li> 
+              {% endfor %} 
             </ul> 
           {% else %} 
-              <p>No hay variable registrados.</p> 
+              <p>No hay variables generadas.</p> 
         {% endif %} 
 
       </div>  

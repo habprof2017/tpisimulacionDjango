@@ -36,11 +36,11 @@
         {% if object_list %} 
             <ul> 
             {% for variable  in object_list %} 
-                <li> {{ variable.valor }} </li> 
+                <li> {{ variable.valor | floatformat:6 }} </li> 
             {% endfor %} 
             </ul> 
           {% else %} 
-              <p>No hay variable registrados.</p> 
+              <p>No hay variables generadas.</p> 
         {% endif %} 
 
       </div>  
