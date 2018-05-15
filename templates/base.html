@@ -8,23 +8,38 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link href="https://getbootstrap.com/docs/4.1/examples/sticky-footer-navbar/sticky-footer-navbar.css" rel="stylesheet">
+  <!-- estilo para el footer -->
+
 </head>
-<body style="height:500px">
+<body style="height:400px">
 
 {% include "navbarfix.html" %}
 
+
   <div class="container-fluid" style="margin-top:80px">
-    <h3>Introduccion</h3>
-    <p>Informacion del trabajo:</p>
-    <li>En la parte superior los links "Lote 1" y "Lote 2" son las pantallas para la generacion de las variables de cada lote respectivamente</li>
-    <li>La opcion de "Variables Generadas" permite ver las variables que se generaron</li>
-    <li>Las variables generadas se guardan en una base de datos SQLite 3</li>
-    <br>
-    <li>Se utilizo el lenguaje Python 3.5 y el Framework Web Django (ver 1.11)</li>
-    <li>El proyecto esta alojado en el hosting de <a href="https://www.pythonanywhere.com">"Python anywhere"</a>con una cuenta gratuita.</li>
-    <li>De esta manera se evitan los instaladores (y la guia para la instalacion), instalacion de librerias externas y es independiente del SO que se utiliza</li>
+  
+    <main role="main" class="container">
+      <h1 class="mt-5">Introduccion</h1>
+      <p class="lead">
+        <li>En la parte superior los links "Lote 1" y "Lote 2" son las pantallas para la generacion de las variables de cada lote respectivamente</li>
+        <li>La opcion de "Variables Generadas" permite ver las variables que se generaron</li>
+        <li>Las variables generadas se guardan en una base de datos SQLite 3</li>
+        <br>
+        <li>Se utilizo el lenguaje Python 3.5 y el Framework Web Django (ver 1.11)</li>
+        <li>El proyecto esta alojado en el hosting de <a href="https://www.pythonanywhere.com">"Python anywhere"</a>con una cuenta gratuita.</li>
+        <li>De esta manera se evitan los instaladores (y la guia para la instalacion), instalacion de librerias externas y es independiente del SO que se utiliza</li>  
+      </p>
+      
+    </main>
 
   </div>
 
+  <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Desarrollado por Grupo Nº 3 --> Acosta, Garcia Akiyama, Sack, Grinberg --> UTN FRRe --> ISI</span>
+      </div>
+  </footer>
 </body>
 </html>
+
